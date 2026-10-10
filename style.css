@@ -1,0 +1,123 @@
+@font-face {
+    font-family: minha-font;
+    src: url('assets/fonts/Cardinal.woff') format('woff');
+
+}
+
+.ficha-basico {
+    border: 2px solid #79583f;
+    background-color: #f4ead7;
+    border-radius: 8px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 250px));
+    gap: 1rem;
+    justify-content: start;
+
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+.ficha-titulo {
+    color: #493B30;
+    font-family: minha-font;
+    font-size: 3rem;
+}
+
+body {
+    margin: 20px;
+    background-color: #e8dcc3;
+    color: #29251F;
+    font-family: Helvetica, sans-serif;
+}
+
+.atributos {
+    border: 2px solid #79583f;
+    background-color: #f4ead7;
+    border-radius: 8px;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 250px));
+    gap: 1rem;
+    justify-content: start;
+
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+}
+
+.atributos-titulo,
+.combate-titulo {
+    color: #493B30;
+    font-family: minha-font;
+    font-size: 2.3rem;
+}
+
+.combate {
+    border: 2px solid #79583f;
+    background-color: #f4ead7;
+    border-radius: 8px;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 250px));
+    gap: 1rem;
+    box-sizing: border-box;
+    justify-content: start;
+
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+input {
+    color: #493B30;
+    background-color: #fff9ed;
+    font-family: Helvetica, sans-serif;
+    font-size: 110%;
+    padding: 8px;
+    border: 2px solid #a68a6b;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 250px;
+
+    outline: none;
+}
+input:focus {
+    border-color: #79583f;
+    box-shadow: 0 0 0 2px #79583f33;
+}
+
+label {
+    color: #29251F;
+    font-family: Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    .ficha-basico {
+        grid-template-columns: 1fr;
+    }
+
+    .combate {
+        grid-template-columns: 1fr;
+    }
+}
